@@ -1,0 +1,95 @@
+{
+  "project_info": {
+    "project_number": "770801929083",
+    "firebase_url": "https://helpyou-b13d5.firebaseio.com",
+    "project_id": "helpyou-b13d5",
+    "storage_bucket": "helpyou-b13d5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:770801929083:android:78faf68f8d2c2bb3",
+        "android_client_info": {
+          "package_name": "com.helpyou.itproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "770801929083-osph8s13ep3m93k34di6ro1eije163gd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.helpyou.itproject",
+            "certificate_hash": "52203b6dcdd52828bd597408207e134c10630f3d"
+          }
+        },
+        {
+          "client_id": "770801929083-ie1r2419pvjribvm2r07m89k4osf3ebu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.helpyou.itproject",
+            "certificate_hash": "91d55a18271837370d00e7ac71491f11e2679563"
+          }
+        },
+        {
+          "client_id": "770801929083-v2a3g5rmpff6m21nu40rlcpj1s7evffu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.helpyou.itproject",
+            "certificate_hash": "a2b3093046aa96c9e264e272dd351761aefd62b6"
+          }
+        },
+        {
+          "client_id": "770801929083-ie1r2419pvjribvm2r07m89k4osf3ebu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.helpyou.itproject",
+            "certificate_hash": "91d55a18271837370d00e7ac71491f11e2679563"
+          }
+        },
+        {
+          "client_id": "770801929083-v2a3g5rmpff6m21nu40rlcpj1s7evffu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.helpyou.itproject",
+            "certificate_hash": "a2b3093046aa96c9e264e272dd351761aefd62b6"
+          }
+        },
+        {
+          "client_id": "770801929083-3euoqd5512su7bu67ulki2cu9t79a7iv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.helpyou.itproject",
+            "certificate_hash": "1cf29f366d34dbe49023c7c54880ec99123c7a34"
+          }
+        },
+        {
+          "client_id": "770801929083-r04llirh0091r40qgu8h2a7knjg5qp7c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABb4kJ2mCDsQQulbTcgSMlb9LTEZu55t4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "770801929083-r04llirh0091r40qgu8h2a7knjg5qp7c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

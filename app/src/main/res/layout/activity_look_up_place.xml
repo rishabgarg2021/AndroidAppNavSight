@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_page_background"
+    tools:context=".LookupPlaceActivity">
+
+    <View
+        android:id="@+id/searchBarViewPlaces"
+        android:layout_width="370dp"
+        android:layout_height="70dp"
+        android:layout_centerInParent="true"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_white"
+        app:layout_constraintBottom_toTopOf="@+id/btnSearchToPlaces"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.036" />
+
+    <fragment
+        android:id="@+id/place_autocomplete_fragment_places"
+        android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+        android:layout_width="346dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/searchBarViewPlaces"
+        app:layout_constraintEnd_toEndOf="@+id/searchBarViewPlaces"
+        app:layout_constraintStart_toStartOf="@+id/searchBarViewPlaces"
+        app:layout_constraintTop_toTopOf="@+id/searchBarViewPlaces" />
+
+    <Button
+        android:id="@+id/btnSearchToPlaces"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_white"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

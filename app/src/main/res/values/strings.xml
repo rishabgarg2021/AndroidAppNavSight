@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Navsight</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main__menu__map">Map</string>
+    <string name="dialog_title">Choose Medical Condition</string>
+    <string name="ok_label">OK</string>
+    <string name="dismiss_label">Dismiss</string>
+    <string name="clearAll_label">Clear All</string>
+
+    <string name="action_camera">Camera</string>
+    <string name="action_media">Choose Media</string>
+
+    <string-array name="medical_condition">
+
+        <item>Arthritis</item>
+        <item>Heart Disease.</item>
+        <item>Asthma</item>
+        <item>Respiratory Diseases</item>
+        <item>Cancer</item>
+        <item>Chronic Bronchitis</item>
+        <item>Coronary Heart Disease</item>
+        <item>Other?</item>
+    </string-array>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_voip">Voip</string>
+    <string name="title_activity_help_requests">HelpRequests</string>
+    <string name="action_reload">action_reload</string>
+    <string name="title_activity_incoming_help_request">IncomingHelpRequest</string>
+    <string name="title_activity_waiting_for_help">waitingForHelp</string>
+    <string name="title_activity_elderly_vol_main">elderlyVolMain</string>
+    <string name="plane_finding">Searching for surfaces&#8230;</string>
+    <string name="title_activity_select_destination_to_share">SelectDestinationToShare</string>
+    <string name="title_activity_vol_select_dest_waiting">volSelectDestWaiting</string>
+    <string name="title_activity_elder_select_dest_waiting">elderSelectDestWaiting</string>
+</resources>

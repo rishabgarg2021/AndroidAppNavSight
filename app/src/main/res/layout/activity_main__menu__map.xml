@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintHorizontal_bias="0.0"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent"
+        map:layout_constraintVertical_bias="0.0"
+        tools:context=".Main_Menu_Map" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="410dp"
+        android:layout_height="320dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/map"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/map"
+        app:layout_constraintVertical_bias="1.0">
+
+        <View
+            android:id="@+id/mainMenuView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_gradient_20dp"
+            android:clickable="true" />
+
+        <Button
+            android:id="@+id/btnPlaces"
+            android:layout_width="105dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/circle_button"
+            android:text="Places"
+            tools:layout_editor_absoluteX="82dp"
+            tools:layout_editor_absoluteY="305dp" />
+
+        <Button
+            android:id="@+id/btnVolunteers"
+            android:layout_width="105dp"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/btnContacts"
+            android:layout_marginEnd="64dp"
+            android:background="@drawable/circle_button"
+            android:text="Volunteers"
+            tools:layout_editor_absoluteX="82dp"
+            tools:layout_editor_absoluteY="305dp" />
+
+        <Button
+            android:id="@+id/btnContacts"
+            android:layout_width="105dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/circle_button"
+            android:text="Contacts"
+            tools:layout_editor_absoluteX="82dp"
+            tools:layout_editor_absoluteY="305dp" />
+
+        <Switch
+            android:id="@+id/volunteer"
+            android:layout_width="113dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnPlaces"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="-29dp"
+            android:layout_toEndOf="@+id/btnPlaces"
+            android:checked="false"
+            android:text="Volunteer?"
+            android:textOff="Volunteer OFF"
+            android:textOn="Volunter ON" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_below="@+id/btnPlaces"
+            android:layout_marginStart="-217dp"
+            android:layout_marginTop="-37dp"
+            android:layout_toEndOf="@+id/btnPlaces"
+            android:popupBackground="@android:color/white" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="376dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/map"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.016">
+
+        <View
+            android:id="@+id/searchBarView"
+            android:layout_width="370dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_white"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <fragment
+            android:id="@+id/place_autocomplete_fragment"
+            android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnAR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="8dp"
+        android:text="View in AR"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
